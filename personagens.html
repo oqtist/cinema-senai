@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| absolute || CINEMA |</title>
+    <script src="personagens.js" defer></script>
+    <link rel="stylesheet" href="personagens.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="mostrarImagem()">
+
+    <div class="container">
+        <div id="div-popup-perso" class="oculta">
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="pop-up" class="oculta">
+            <button onclick="fecharPopup()" class="fechar-popup">x</button>
+            <h2>Informações do/a Protagonista:</h2>
+            <h3>Todos os dados devem ser preenchidos.</h3>
+            <form onsubmit="enviarProtagonista(event)">
+                <label for="id_foto">Foto da Capa:</label>
+                <input type="url" id="id_foto" name="protagonista_foto" placeholder="URL da foto" class="items-form">
+
+                <label for="id_protagonista">Nome:</label>
+                <input type="text" id="id_protagonista" name="protagonista_nome" class="items-form">
+
+                <label for="id_real">Nome do/a Intérprete:</label>
+                <input type="text" id="id_real" name="nome_real" class="items-form">
+
+                <label for="id_filme">Nome do Filme:</label>
+                <input type="text" id="id_nome-filme" name="nome_filme" class="items-form">
+
+                <label for="id_habil">Habilidades:</label>
+                <input type="text" id="id_habil" name="habilidades" class="items-form">
+
+                <label for="id_descricao">Descrição da Personagem:</label>
+                <input type="text" id="id_descricao" name="descricao" cols="15" rows="1" class="items-form">
+                <button type="submit" onclick="fecharPopup()" id="botao-submit" class="items-form">Adicionar Personagem</button>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <img src="logo-header.png" id="logo-aqui" alt="'Absolute Cinema'">
+        <nav>
+            <a href="index.html" class="nav-elementos">Filmes</a>
+            <a href="personagens.html" class="nav-elementos">Protagonistas</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="div-personagens">
+            <div id="adicionar-personagem">
+                <p>Adicionar Protagonista</p>
+                <button id="botao-add-personagem" onclick="fecharPopup()">+</button>
+            </div>
+            <div id="perso1" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso2" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso3" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso4" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso5" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso6" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso7" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso8" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso9" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso10" class="caixaPerso" onclick="popPerso(event)"></div>
+            <div id="perso11" class="caixaPerso" onclick="popPerso(event)"></div>
+        </div>
+    </main>
+    <footer>
+        © 2024 lololol | Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>

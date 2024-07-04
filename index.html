@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| absolute || CINEMA |</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="switchCarregar()">
+
+    <div class="sticky-container">
+        <div id="div-popup-filme" class="oculta">
+        </div>
+    </div>
+
+    <div class="sticky-container">
+        <div id="div-popup" class="oculta">
+            <button onclick="fecharPopup()" class="fechar-popup">x</button>
+            <h2>Informações do Filme:</h2>
+            <h3>Todos os dados devem ser preenchidos.</h3>
+            <form onsubmit="enviarFilme(event)">
+                <label for="id-foto-capa">Foto da Capa:</label>
+                <input type="url" name="foto-da-capa" id="id-foto-capa" placeholder="URL da Capa" class="items-form">
+
+                <label for="id-titulo">Título do Filme:</label>
+                <input type="text" name="titulo" id="id-titulo" class="items-form">
+
+                <label for="id-diretor">Diretor:</label>
+                <input type="text" name="diretor" id="id-diretor" class="items-form">
+
+                <label for="id-data-lancamento">Data de Lançamento:</label>
+                <input type="number" min="1888" name="data-lancamento" id="id-data-lancamento" class="items-form">
+
+                <label for="id-genero">Gênero:</label>
+                <input type="text" name="genero" id="id-genero" class="items-form">
+
+                <label for="id-sinopse">Sinopse:</label>
+                <textarea name="sinopse" id="id-sinopse" cols="15" rows="1" class="items-form"></textarea>
+                <button type="submit" onclick="fecharPopup()" class="items-form">Adicionar
+                    Filme</button>
+            </form>
+        </div>
+    </div>
+    
+    <header>
+        <img src="logo-header.png" alt="Logo do Cinema 'Absolute Cinema'">
+        <nav>
+            <a href="index.html" class="nav-elementos" id="nav-filmes">Filmes</a>
+            <a href="personagens.html" class="nav-elementos">Protagonistas</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="div-filmes">
+            <div id="div-adicionar-filme"">
+                <p>Adicionar Filme</p>
+                <button onclick="fecharPopup()">+</button>
+            </div>
+            <div class="div-filmes-class" id="filme-1" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-2" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-3" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-4" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-5" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-6" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-7" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-8" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-9" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-10" onclick="popupFilme(event)"></div>
+            <div class="div-filmes-class" id="filme-11" onclick="popupFilme(event)"></div>
+        </div>
+    </main>
+    <footer>
+        © 2024 lololol | Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
