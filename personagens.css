@@ -77,7 +77,7 @@ a:hover {
 
 #div-adicionar-char {
     width: 250px;
-    max-height: 190px;
+    height: 190px;
     padding: 90px 0px;
     margin: 30px;
     display: flex;
