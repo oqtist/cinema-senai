@@ -8,7 +8,7 @@ body {
     font-family: 'poppins';
 }
 
-#botao-apagar-perso {
+#botao-apagar-char {
     background-color: #500c0c;
     color: wheat;
     border: none;
@@ -17,17 +17,18 @@ body {
     font-size: 15pt;
     font-family: 'poppins', 'sans-serif';
     margin: 30px 0px 0px 0px;
+    font-weight: lighter;
 }
 
-#botao-apagar-perso:hover {
+#botao-apagar-char:hover {
     background-color: #942222;
 }
 
-#botao-apagar-perso:active {
+#botao-apagar-char:active {
     background-color: #500c0c;
 }
 
-#container {
+#div-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,7 +56,7 @@ a:hover {
     filter: drop-shadow(0px 0px 5px wheat);
 }
 
-.caixaPerso {
+.class-char-covers {
     width: 250px;
     height: 375px;
     margin: 30px;
@@ -70,11 +71,11 @@ a:hover {
     justify-content: center;
 }
 
-.caixaPerso:hover {
+.class-char-covers:hover {
     box-shadow: #af0000 10px 5px 10px;
 }
 
-#adicionar-personagem {
+#div-adicionar-char {
     width: 250px;
     max-height: 190px;
     padding: 90px 0px;
@@ -86,18 +87,18 @@ a:hover {
     background-color: #a52a2a;
 }
 
-#adicionar-personagem:hover {
+#div-adicionar-char:hover {
     box-shadow: #af0000 10px 5px 10px;
 }
 
-#adicionar-personagem p {
+#div-adicionar-char p {
     padding: 5px 9px;
     margin: 1px;
     color: wheat;
     text-align: center;
 }
 
-#adicionar-personagem button {
+#div-adicionar-char button {
     width: 25px;
     height: 25px;
     margin: 10px;
@@ -107,7 +108,7 @@ a:hover {
     color: rgb(94, 21, 21);
 }
 
-#adicionar-personagem button:hover {
+#div-adicionar-char button:hover {
     color: wheat;
 }
 
@@ -125,37 +126,21 @@ a:hover {
     filter: drop-shadow(white 0px 0px 3px);
 }
 
-#pop-up {
+#div-popup {
     border-radius: 10px;
-    padding: 35px;
+    padding: 50px;
+    max-width: 30vw;
     text-align: center;
     position: absolute;
     top: 15vh;
     background-color: #691818;
-    text-align: center;
 }
 
-#pop-up input,
-textarea {
-    background-color: #500c0c;
-    border: none;
-    color: wheat;
-    border-radius: 3px;
-    text-align: center;
+#div-popup button {
+    margin: 10px;
 }
 
-#pop-up h2 {
-    color: wheat;
-    font-size: 20pt;
-}
-
-#pop-up label {
-    color: wheat;
-    font-weight: 200;
-    font-size: large;
-}
-
-#div-popup-perso {
+#div-popup-chars {
     border-radius: 10px;
     padding: 50px;
     width: max-content;
@@ -168,6 +153,26 @@ textarea {
     color: wheat;
     flex-direction: column;
     justify-content: center;
+}
+
+#div-popup input,
+textarea {
+    background-color: #500c0c;
+    border: none;
+    color: wheat;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#div-popup h2 {
+    color: wheat;
+    font-size: 20pt;
+}
+
+#div-popup label {
+    color: wheat;
+    font-weight: 200;
+    font-size: large;
 }
 
 form {
@@ -190,7 +195,7 @@ form button {
     color: wheat;
     border: none;
     border-radius: 3px;
-    height: 50px;
+    height: max-content;
     font-size: 15pt;
     font-family: 'poppins', 'sans-serif';
 }
@@ -211,7 +216,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: end;
+    justify-content: end;  
 }
 
 .nav-elementos {
@@ -232,7 +237,7 @@ footer {
     font-size: 9pt;
 }
 
-.container {
+.sticky-container {
     position: sticky;
     top: 1%;
     justify-content: center;
@@ -244,8 +249,4 @@ h3 {
     font-weight: 200;
     margin-bottom: 50px;
     font-size: 12pt;
-}
-
-#botao-submit {
-    height: max-content;
 }
