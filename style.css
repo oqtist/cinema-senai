@@ -17,6 +17,7 @@ body {
     font-size: 15pt;
     font-family: 'poppins', 'sans-serif';
     margin: 30px 0px 0px 0px;
+    font-weight: lighter;
 }
 
 #botao-apagar-filme:hover {
@@ -55,7 +56,7 @@ a:hover {
     filter: drop-shadow(0px 0px 5px wheat);
 }
 
-.div-filmes-class {
+.class-filme-covers {
     width: 250px;
     height: 375px;
     margin: 30px;
@@ -68,9 +69,10 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
+    font-weight: lighter;
 }
 
-.div-filmes-class:hover {
+.class-filme-covers:hover {
     box-shadow: #af0000 10px 5px 10px;
 }
 
@@ -147,6 +149,7 @@ a:hover {
     color: wheat;
     flex-direction: column;
     justify-content: center;
+    font-weight: 1px;
 }
 
 #div-popup input,
